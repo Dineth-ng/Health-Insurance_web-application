@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/indexCss.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <title>Limetech X</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h2 class="navHeader">Limetech X</h2>
+        <ul class="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="getInsurance">
+            <button class="btnInsurance">Get Insurance</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <section class="TxtHeader">
+            <div class="main">
+                <h2 class="Head">
+                    A perfect <span class="highlight">Insurance</span> plan adjusted to all your needs.
+                </h2>
+            </div>
+            <div class="sec">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate alias quod assumenda nobis natus cumque iste totam. Molestias, aspernatur perferendis est provident porro quo illo quia non dignissimos autem.</p>
+            </div>
+            <div class="buttonSection">
+                <a href="InsurancePlanPage.html"><button class="btnactive">Get Insurance</button></a>
+                <button class="btn">Contact us</button>
+            </div>
+        </section>
+
+        <section class="HeroImages">
+            <img src="img/img.png" alt="leading image" class="heroImage">
+        </section>
+    </header>
+
+    <!-- Notify Banner -->
+    <section class="notifyBar">
+        <div class="Cservice">
+            <div class="c1">    
+                <p class="count" data-target="12">0+</p>
+                <p class="title">Years of service</p>                
+            </div>
+            <div class="c1">    
+                <p class="count" data-target="18">0k</p>
+                <p class="title">Claims resolved</p>                
+            </div>
+            <div class="c1">    
+                <p class="count" data-target="367">0k</p>
+                <p class="title">Happy Clients</p>                
+            </div>
+            <div class="c1">    
+                <p class="count" data-target="38">0M+</p>
+                <p class="title">Money saved</p>                
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="typeOfinsurance">
+            <h2 class="titleType">
+                The right <span class="highlight">Insurance</span> plan for every need.
+            </h2>
+        </div>
+
+        <div class="parent">
+            <div class="card">
+                <img src="img/hh.jpg" alt="test image" class="testImage">
+                <p class="topic">Life Insurance</p>
+                <p class="sectopic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate alias quod assumenda nobis natus cumque iste totam.</p>
+            </div>
+            <div class="card">
+                <img src="img/hh.jpg" alt="test image" class="testImage">
+                <p class="topic">Health Insurance</p>
+                <p class="sectopic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate alias quod assumenda nobis natus cumque iste totam.</p>
+            </div>
+            <div class="card">
+                <img src="img/hh.jpg" alt="test image" class="testImage">
+                <p class="topic">Vehicle Insurance</p>
+                <p class="sectopic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate alias quod assumenda nobis natus cumque iste totam.</p>
+            </div>
+            <div class="card">
+                <img src="img/hh.jpg" alt="test image" class="testImage">
+                <p class="topic">Travel Insurance</p>
+                <p class="sectopic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate alias quod assumenda nobis natus cumque iste totam.</p>
+            </div>
+            <div class="card">
+                <img src="img/hh.jpg" alt="test image" class="testImage">
+                <p class="topic">Property Insurance</p>
+                <p class="sectopic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate alias quod assumenda nobis natus cumque iste totam.</p>
+            </div>
+            <div class="card">
+                <img src="img/hh.jpg" alt="test image" class="testImage">
+                <p class="topic">Business Insurance</p>
+                <p class="sectopic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate alias quod assumenda nobis natus cumque iste totam.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/hh.jpg" alt="test image" class="testImage">
+                <p class="topic">Business Insurance</p>
+                <p class="sectopic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate alias quod assumenda nobis natus cumque iste totam.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/hh.jpg" alt="test image" class="testImage">
+                <p class="topic">Customis Your Insurance</p>
+                <p class="sectopic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate alias quod assumenda nobis natus cumque iste totam.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Animation scripts -->
+     <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".count");
+
+    const options = { threshold: 0.5 }; // Trigger when 50% of section is visible
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                        const target = parseInt(counter.getAttribute("data-target"));
+                        const current = parseInt(counter.innerText) || 0;
+                        const increment = Math.ceil(target / 100);
+
+                        if (current < target) {
+                            counter.innerText = current + increment;
+                            setTimeout(updateCount, 30);
+                        } else {
+                            counter.innerText = target + "+";
+                        }
+                    };
+                    updateCount();
+                });
+                observer.disconnect(); // Run animation only once
+            }
+        });
+    }, options);
+
+    observer.observe(document.querySelector(".notifyBar"));
+});
+</script>
+
+
+
+
+
+
+</body>
+</html>

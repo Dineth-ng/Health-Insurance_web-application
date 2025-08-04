@@ -1,0 +1,163 @@
+.pageTitle .sec {
+    opacity: 0.6;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.pageTitle .pgt {
+    font-size: 58px;
+    font-weight: bold;
+}
+
+.pageTitle {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.ip1 {
+    width: 22%;
+    min-width: 250px;
+    height: auto;
+    border-radius: 12px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ip1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.head {
+    font-size: 28px;
+    margin: 10px;
+}
+
+.headdis {
+    opacity: 0.6;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.LkR {
+    font-size: 32px;
+    margin: 10px;
+    font-weight: 900;
+}
+
+.LkR .timeplan {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.dec {
+    border: none;
+    height: 1px;
+    background: #ddd;
+    margin: 10px 0;
+}
+
+.include {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.itemname {
+    margin: 4px 0;
+    opacity: 0.7;
+    font-weight: normal;
+}
+
+.startBtn .Btn-start {
+    background-color: #060606;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.startBtn .Btn-start:hover {
+    background-color: #333;
+}
+
+/* Contact Section */
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    margin: 8pc 0 20px 0;
+}
+
+.mainContainer {
+    background-color: #7fff7f;
+    padding: 30px;
+    width: 65%;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.highlight1 {
+    background-color: #ffffff;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.mainhalf1 {
+    width: 55%;
+}
+
+.headerof {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.titles {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.mainhalf2 {
+    width: 40%;
+    text-align: right;
+}
+
+.btn {
+    background: #000;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #333;
+}
