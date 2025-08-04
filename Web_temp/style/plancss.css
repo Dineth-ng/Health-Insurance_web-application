@@ -28,7 +28,9 @@
 .ip1 {
     width: 22%;
     min-width: 250px;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
     border-radius: 12px;
     padding: 15px;
     border: 1px solid #ccc;
@@ -74,14 +76,22 @@
 .include {
     font-size: 18px;
     font-weight: bold;
+    flex-grow: 1; /* Pushes content up and button down */
     margin: 5px 0;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .itemname {
     margin: 4px 0;
     opacity: 0.7;
     font-weight: normal;
+}
+
+.startBtn {
+    margin-top: auto;
 }
 
 .startBtn .Btn-start {
@@ -160,4 +170,28 @@
 
 .btn:hover {
     background: #333;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 1024px) {
+    .plans {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .ip1 {
+        width: 45%; /* 2 cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .ip1 {
+        width: 90%; /* Single column on mobile */
+    }
+    .mainContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .mainhalf1, .mainhalf2 {
+        width: 100%;
+    }
 }
