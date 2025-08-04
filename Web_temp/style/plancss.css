@@ -76,7 +76,7 @@
 .include {
     font-size: 18px;
     font-weight: bold;
-    flex-grow: 1; /* Pushes content up and button down */
+    flex-grow: 1;
     margin: 5px 0;
     padding: 5px;
     display: flex;
@@ -172,20 +172,20 @@
     background: #333;
 }
 
-/* ✅ Responsive Design */
+
 @media (max-width: 1024px) {
     .plans {
         flex-direction: row;
         justify-content: center;
     }
     .ip1 {
-        width: 45%; /* 2 cards per row */
+        width: 45%;
     }
 }
 
 @media (max-width: 768px) {
     .ip1 {
-        width: 90%; /* Single column on mobile */
+        width: 90%;
     }
     .mainContainer {
         flex-direction: column;
@@ -195,3 +195,4 @@
         width: 100%;
     }
 }
+
