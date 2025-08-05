@@ -1,0 +1,181 @@
+/* Main Container */
+.headContainer {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.firstContainer {
+    background-color: #f4f4f4;
+    display: flex;
+    width: 70%;
+    height: auto;
+    justify-content: space-between;
+    padding: 4pc;
+    border-radius: 18px;
+    gap: 30px;
+}
+
+/* Left Section */
+.sectionOne {
+    width: 60%;
+}
+
+.imageContainer {
+    margin-bottom: 20px;
+}
+
+/* .image {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+} */
+
+.titleContainer .title {
+    font-size: 48px;
+    color: black;
+    margin-top: 10px;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+    opacity: 0.7;
+    font-weight: 500;
+    width: 90%;
+    line-height: 1.5;
+}
+
+.includeContainer {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;   
+}
+
+.includetitle {
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+
+.itemname {
+    margin: 6px 0;
+    opacity: 0.7;
+    font-weight: normal;
+}
+
+/* Right Section */
+.sectionTwo {
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 30px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.priceContainer {
+    padding: 10px;
+}
+
+.title-of-plan {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.descript {
+    font-size: 18px;
+    opacity: 0.6;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.priceContainer .LkR {
+    font-size: 40px;
+    font-weight: 700;
+    color: #060606;
+    margin-bottom: 25px;
+}
+
+/* Select Menu */
+.selectionMenu {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.select-menu {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    background: #fff;
+    height: 45px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.select {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+}
+
+.select option {
+    padding: 10px;
+    background: #fff;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Button */
+.btnInsurance {
+    background-color: #060606;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.btnInsurance:hover {
+    background-color: #333;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .firstContainer {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        padding: 3pc;
+    }
+    .sectionOne, .sectionTwo {
+        width: 100%;
+    }
+    .image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .titleContainer .title {
+        font-size: 36px;
+    }
+    .description {
+        font-size: 1rem;
+    }
+    .priceContainer .LkR {
+        font-size: 32px;
+    }
+}
